@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+	    <report
+			id="account.account_invoice"
+	    	string="Invoices"
+	    	model="account.invoice"
+	    	name="ve.account.invoice"
+	    	auto="False"
+			rml="l10n_ve_print_invoice/report/account_print_invoice.rml"
+			header="False"
+			attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
+	    	usage="default"
+	    	multi="True"
+	    	/>
+	</data>
+</openerp>
