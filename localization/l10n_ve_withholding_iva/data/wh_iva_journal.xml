@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+	<!-- Account Journal -->
+        <record id="purchase_wh_iva_journal" model="account.journal"> 
+            <field name="name">Diario IVA Compra</field>
+            <field name="code">IVAC</field>
+            <field name="type">iva_purchase</field>
+        </record>
+        <record id="sale_wh_iva_journal" model="account.journal">
+            <field name="name">Diario IVA Venta</field>
+            <field name="code">IVAV</field>
+            <field name="type">iva_sale</field>
+        </record>
+   </data>
+</openerp>
